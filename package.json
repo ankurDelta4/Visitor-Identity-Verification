@@ -1,0 +1,17 @@
+{
+  "name": "identity-verification",
+  "version": "1.0.0",
+  "description": "This project is a desmonstration of User's Identity Verification",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Delta4 Infotech",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.9"
+  }
+}

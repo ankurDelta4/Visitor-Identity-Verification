@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Home Page</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+
+        <label for="phone">Phone:</label>   
+        <input type="tel" name="phone" placeholder="Enter your phone number">
+
+        <label for="Unique ID">Unique ID:</label>
+        <input type="text" name="unique_id" placeholder="Enter your unique ID">
+
+
+        <button id="submitButton">Submit</button>
+    </form>
+
+</body>
+<script src="https://widget.yourgpt.ai/script.js" id="yourgpt-chatbot" data-widget="a584ebf8-fef4-48d2-84ed-ee4b7942d6e4"> </script>
+
+<script>
+    // Wait for the chatbot to be ready
+    $yourgptChatbot.execute("message:send", { text: "Hello", send: true });
+    console.log("Hello", $yourgptChatbot);
+</script>
+</html>
