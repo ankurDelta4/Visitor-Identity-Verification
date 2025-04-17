@@ -37,7 +37,6 @@ This system provides secure identity verification for visitors using HMAC token 
 
 ## 🛠️ Technical Architecture
 
-```
 ┌──────────────┐     ┌──────────────┐     ┌──────────────────┐     ┌───────────────┐
 │ User sends   │────▶│ Request      │────▶│ Server creates   │────▶│ Validate      │
 │ request      │     │ received by  │     │ HMAC token       │     │ credentials   │
