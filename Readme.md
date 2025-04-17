@@ -87,6 +87,7 @@ This system provides secure identity verification for visitors using HMAC token 
 **Request Body:**
 ```json
 {
+```
 
 ---
 
