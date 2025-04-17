@@ -75,20 +75,6 @@ This system provides secure identity verification for visitors using HMAC token 
 
 ---
 
-## 📡 API Usage
-
-### Identity Verification Endpoint
-
-**Endpoint:** `/identity`
-
-**Method:** `POST`
-
-**Request Body:**
-```json
-{
-```
-
----
 
 ## 🚀 Getting Started
 
