@@ -17,12 +17,11 @@ This system provides secure identity verification for visitors using HMAC token 
 
 ## 🛠️ Technical Architecture
 
-```
-+---------------------+      +----------------------------+      +---------------------+      +---------------------------+      +---------------------------+  
-|    User Request     |---->|  Server Receives Request  |---->|  Create HMAC Token  |---->|  Validate Credentials     |---->|  
-+---------------------+      +----------------------------+      +---------------------+      +---------------------------+      +---------------------------+  
++---------------------+      +----------------------------+      +---------------------+      +---------------------------+      +---------------------------+
+|    User Request     |---->|  Server Receives Request  |---->|   Create HMAC Token  |---->|   |   Validate Credentials     | 
++---------------------+      +----------------------------+      +---------------------+      +---------------------------+    
                                                                                               |                         |  
-                                                                                         No v                         v Yes  
+                                                                                           No v                         v Yes  
                                                                                    +---------------+          +-----------------------+  
                                                                                    | Error Message |          | Send Token to App     |  
                                                                                    +---------------+          +-----------------------+  
@@ -40,6 +39,8 @@ This system provides secure identity verification for visitors using HMAC token 
                                                                                                                          v  
                                                                                                               +--------------------------+  
                                                                                                               | Create User Contact      |  
+                                                                                                              +--------------------------+
+
                                                                                                               +--------------------------+
 
 ```
