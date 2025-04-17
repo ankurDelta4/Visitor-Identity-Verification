@@ -18,6 +18,75 @@ This system provides secure identity verification for visitors using HMAC token 
 ## 🛠️ Technical Architecture
 
 ```
+# 🔒 Visitor Identity Verification System
+
+## Overview
+
+This system provides secure identity verification for visitors using HMAC token generation. It offers a reliable way to authenticate visitors through unique identifiers, email addresses, or phone numbers.
+
+---
+
+## ✨ Features
+
+- **Secure Authentication** - Uses HMAC-SHA256 for robust token generation
+- **Flexible Identification** - Supports multiple identification methods
+- **Error Handling** - Comprehensive error management throughout the process
+- **API Endpoint** - Simple RESTful interface for easy integration
+
+---
+
+## 🛠️ Technical Architecture
+
+```
+┌──────────────┐     ┌──────────────┐     ┌──────────────────┐     ┌───────────────┐
+│ User sends   │────▶│ Request      │────▶│ Server creates   │────▶│ Validate      │
+│ request      │     │ received by  │     │ HMAC token       │     │ credentials   │
+└──────────────┘     │ server       │     └──────────────────┘     └───────┬───────┘
+                     └──────────────┘                                      │
+                                                                           │
+                                ┌──────────────┐                           │
+                                │ Error        │◀───────────No─────────────┘
+                                │ handling     │
+                                └──────────────┘                           │
+                                                                          Yes
+                                                                           │
+┌──────────────┐     ┌──────────────┐     ┌──────────────────┐            │
+│ User contact │◀────│ YourGPT      │◀────│ Your App sends   │◀───────────┘
+│ created      │     │ validates    │     │ token to YourGPT │
+└──────────────┘     │ token        │     └──────────────────┘
+                     └──────────────┘
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js environment
+- Express.js framework
+- Crypto module
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set environment variable: `HMAC_SECRET_KEY` 
+4. Start the server: `npm start`
+
+---
+
+## 📡 API Usage
+
+### Identity Verification Endpoint
+
+**Endpoint:** `/identity`
+
+**Method:** `POST`
+
+**Request Body:**
+```json
+{
 
 ---
 
