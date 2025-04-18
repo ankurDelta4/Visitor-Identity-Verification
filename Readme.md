@@ -57,7 +57,6 @@ This system provides secure identity verification for visitors using HMAC token 
 │ created      │     │ validates    │      │ Token + contact  │
 └──────────────┘     │ token        │      │ details          │
                      └──────────────┘      └──────────────────┘
-```
 
 ### Authentication Flow Process
 
