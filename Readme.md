@@ -58,6 +58,8 @@ This system provides secure identity verification for visitors using HMAC token 
 └──────────────┘     │ token        │      │ details          │
                      └──────────────┘      └──────────────────┘
 
+
+
 ### Authentication Flow Process
 
 1. User visits your frontend application
@@ -70,7 +72,7 @@ This system provides secure identity verification for visitors using HMAC token 
 8. User contact is created upon successful validation
 
 ---
-
+```
 ## 🚀 Getting Started
 
 ### Prerequisites
