@@ -39,7 +39,7 @@ This system provides secure identity verification for visitors using HMAC token 
 
 
 ┌──────────────┐     ┌──────────────┐     ┌──────────────────┐     ┌────────────────┐
-│ User Visit   │────▶│ Request      │───▶│ Your Server      │────▶│ Your Frontend  │
+│ User Visit   │────▶│ Request      │ ───▶│ Your Server      │────▶│ Your Frontend  │ 
 │ your Frontend│     │ received by  │     │ creates HMAC     │     │ gets the token │
 └──────────────┘     │ your server  │     │ token            │     └───────┬────────┘
                      └──────────────┘     └──────────────────┘             │
@@ -53,7 +53,7 @@ This system provides secure identity verification for visitors using HMAC token 
                                                                              │
                                                                              │
 ┌──────────────┐     ┌──────────────┐      ┌──────────────────┐              │
-│ User contact │◀────│ YourGPT      │◀────│ YourGPT receives │◀─────────────┘
+│ User contact │◀────│ YourGPT      │◀──── │ YourGPT receives │◀─────────────┘
 │ created      │     │ validates    │      │ Token + contact  │
 └──────────────┘     │ token        │      │ details          │
                      └──────────────┘      └──────────────────┘
