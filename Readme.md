@@ -99,7 +99,8 @@ This system provides secure identity verification for visitors using HMAC token 
 **Method:** `POST`
 
 **Request Body:**
-```json
+```
+json
 {
   user_unique_id: unique id,
   name: Username,
